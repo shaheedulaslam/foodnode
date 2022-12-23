@@ -1,0 +1,24 @@
+
+ <div class="topic"><h1 style="font-family: 'Pacifico', cursive;" class="position-absolute top-0 start-50 translate-middle-x  mt-5">TastyFoods</h1></div>
+ <form action="/home" method="post" class="position-absolute top-50 start-50 translate-middle  border border-warning bg-light w-25 container-fluid rounded-2">
+        <div class="mb-3">
+        
+          <input type="email" class="form-control max-width: 100%  border border-warning mt-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email" required> 
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control border border-warning mb-5" id="exampleInputPassword1" placeholder="Password" name="password"required>
+        </div>
+        {{#if Err}}
+        <p class="text-danger">Wrong Email OR Password</p>
+        {{/if}}
+
+     <div class="mb-3 form-check fs-7">
+     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+     <label class="form-check-label" for="exampleCheck1">Remember me</label>
+     <a href="#" class="ms-5">Forgot password?</a>
+     </div>
+        
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary mx-auto mb-4 mt-4" style="width: 150px;">Login</button></div>
+     
+    </form>
